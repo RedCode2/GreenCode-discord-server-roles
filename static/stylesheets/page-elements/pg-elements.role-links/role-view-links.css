@@ -1,0 +1,115 @@
+/* Main container for links */
+.links-overall-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    min-height: 100vh; 
+}
+
+/* Role link container styling */
+.role-link-container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: solid 1px #c7c7c7;
+    border-radius: 16px;
+    height: 425px;
+    width: 45%; 
+    max-width: 400px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 10px;
+    margin: 0; 
+}
+
+/* Hover effect */
+.role-link-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px #000000fb;
+}
+
+/* Image styles for different roles */
+.role-link-container .professional-role-img,
+.role-link-container .memelord-role-img,
+.role-link-container .patreon-role-img,
+.role-link-container .serverbooster-role-img,
+.role-link-container .other-roles-img,
+.role-link-container .greencoder-role-img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 14px 14px 0px 0px;
+    margin-bottom: 5%;
+}
+
+/* Individual image width adjustments */
+.role-link-container .memelord-role-img {
+    width: 65%;
+}
+
+.role-link-container .serverbooster-role-img {
+    width: 58%;
+}
+
+.role-link-container .other-roles-img {
+    width: 76%;
+}
+
+.role-link-container .greencoder-role-img {
+    width: 50%;
+    margin-top: 5%;
+}
+
+/* Content within role link containers */
+.role-link-container .role-link-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+
+.role-link-container h3 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 2px;
+}
+
+.role-link-container p {
+    margin-left: -10px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #3c3c3c;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Responsive design with media queries */
+
+/* Adjust to single column on smaller screens */
+@media (max-width: 768px) {
+    .role-link-container {
+        width: 90%;
+        height: 375px;
+        margin: 10px 0;
+    }
+    .role-link-container h3 {
+        font-size: 1.1rem;
+    }
+    .role-link-container p {
+        font-size: 0.8rem;
+    }
+}

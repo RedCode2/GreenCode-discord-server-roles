@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/stylesheets/root_stylesheet.css">
+    <link rel="stylesheet" href="static/stylesheets/roboto-css-classes.css">
+    <link rel="stylesheet" href="static/stylesheets/page-elements/pg-elements.navbar/navbar-stylesheet.css">
+    <link rel="stylesheet" href="static/stylesheets/page-elements/pg-elements.role-links/role-view-links.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Home page</title>
+
+    <style>
+        .color-red {
+            color: red
+        }
+        .purple-circle {
+            background-color: purple;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .yellow-circle {
+            background-color: rgb(233, 241, 0);
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .custom-purple-circle {
+            background-color: #f47fff;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .green-circle {
+            background-color: rgb(0, 253, 0);
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .orange-circle {
+            background-color: orange;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        h2 {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">🧬</div>
+        <ul class="navbar-links" id="navbarLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="navbar-toggle" onclick="toggleNavbar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="main">        
+        <span href="#" class="links-overall-container">
+            <div class="role-link-container">
+                <img
+                    src="static/stylesheets/page-elements/images/home-page.html/4cbee01007ffb957e6bf876a76d8b002-computer-screen-with-code-icon.webp" 
+                    alt="professional_role_img"
+                    class="professional-role-img"
+                >
+                <div class="role-link-content">
+                    <h3><span class="purple-circle"></span> Professional</h3>
+                    <p>The Professional role is challenging to get. We have a test to see if you deserve this role or not. Click on this link to take the test. Good luck!</p>
+                </div>
+            </div>
+            <div class="role-link-container">
+                <img
+                    src="static/stylesheets/page-elements/images/home-page.html/5144-C5v38L.jpg" 
+                    alt="memelord_role_img"
+                    class="memelord-role-img"
+                >
+                <div class="role-link-content">
+                    <h3><span class="yellow-circle"></span> Meme Lord</h3>
+                    <p>If you send memes regularly in the memes channel, you will get the Meme Lord role. Post memes regularly and the mods will find out if you deserve this role.</p>
+                </div>
+            </div>
+            <div class="role-link-container">
+                <img 
+                    src="static/stylesheets/page-elements/images/home-page.html/avatars-000146225244-3a983t-t1080x1080.jpg" 
+                    alt="patreon_role_img"
+                    class="patreon-role-img"
+                >
+                <div class="role-link-content">
+                    <h3><span class="yellow-circle"></span> Patreon / Donor</h3>
+                    <p>The Patreon role is only for those who are Patreon members of GreenCode whereas the Donor role is only for those who donated to GreenCode. Click on this link to view the links to donate to GreenCode or become a Patreon member of GreenCode.</p>
+                </div>
+            </div>
+            <div class="role-link-container">
+                <img 
+                    src="static/stylesheets/page-elements/images/home-page.html/pngaaa.com-5186301.png" 
+                    alt="serverbooster_role_img"
+                    class="serverbooster-role-img"
+                >
+                <div class="role-link-content">
+                    <h3><span class="custom-purple-circle"></span> Server Booster</h3>
+                    <p>The Server Booster role is only for those who boost the server. Boosting a discord server can improve the features in the server like 'adding more space for maximum number of custom emojis' etc.</p>
+                </div>
+            </div>
+            <div class="role-link-container">
+                <img
+                    src="static/stylesheets/page-elements/images/home-page.html/dna_1f9ec.png" 
+                    alt="greencoder_role_img"
+                    class="greencoder-role-img"
+                >
+                <div class="role-link-content">
+                    <h3><span class="green-circle"></span> Green Coder</h3>
+                    <p>The Green Coder role is the basic role for everyone! Whenever a user joins GreenCode's server, they will be given this role. Somehow, if you don't get this role, and it's been a few days since you joined the server, feel free to contact the mods.</p>
+                </div>
+            </div>
+            <div class="role-link-container">
+                <img 
+                    src="static/stylesheets/page-elements/images/home-page.html/0f8b2870896edcde8f6149fe2733faaf.jpg" 
+                    alt="other_roles_img"
+                    class="other-roles-img"
+                >
+                <div class="role-link-content">
+                    <h3><span class="orange-circle"></span> Other roles</h3>
+                    <p>Other roles include roles like 'AI', 'Python', 'C/C++', 'Javascript', 'Web Design' and 'Game Creation'. When you join the server, you can choose what you're good at from the following, then the roles are added to your profile. Yes, you can choose all of them even if you're not good at them. Yup, it's so simple and easy!</p>
+                </div>
+            </div>
+        </span>
+    </main>
+    <script>
+        function toggleNavbar() {
+            const navbarLinks = document.getElementById("navbarLinks");
+            const navbarToggle = document.querySelector(".navbar-toggle");
+  
+            navbarLinks.classList.toggle("active");
+            navbarToggle.classList.toggle("open");
+  
+            // Toggle aria-expanded for accessibility
+            const expanded = navbarToggle.getAttribute("aria-expanded") === "true";
+            navbarToggle.setAttribute("aria-expanded", !expanded);
+        }
+    </script>
+</body>
+</html>
