@@ -59,6 +59,22 @@
             display: inline-block;
             margin-right: 10px;
         }
+        .blue-circle {
+            background-color: rgb(0, 85, 255);
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .custom-blue-circle {
+            background-color: rgb(0, 174, 255);
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            margin-right: 10px;
+        }
         h2 {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
@@ -127,6 +143,17 @@
                 </div>
             </div>
             <div class="role-link-container">
+                <img 
+                    src="static/stylesheets/page-elements/images/home-page.html/815.webp" 
+                    alt="tofocus_role_img"
+                    class="tofocus-role-img"
+                >
+                <div class="role-link-content">
+                    <h3><span class="custom-blue-circle"></span> 2 Focus</h3>
+                    <p>The 2 Focus role is for those who selected it. It basically provides you information and updates about the 2 Focus app. You can report bugs on the app, suggest features and many more. You can install the 2 Focus app on Play Store (android) or the App store (iOS).</p>
+                </div>
+            </div>
+            <div class="role-link-container">
                 <img
                     src="static/stylesheets/page-elements/images/home-page.html/dna_1f9ec.png" 
                     alt="greencoder_role_img"
@@ -135,6 +162,17 @@
                 <div class="role-link-content">
                     <h3><span class="green-circle"></span> Green Coder</h3>
                     <p>The Green Coder role is the basic role for everyone! Whenever a user joins GreenCode's server, they will be given this role. Somehow, if you don't get this role, and it's been a few days since you joined the server, feel free to contact the mods.</p>
+                </div>
+            </div>
+            <div class="role-link-container">
+                <img 
+                    src="static/stylesheets/page-elements/images/home-page.html/question-and-answer-7247900_1920.png" 
+                    alt="questionoftheday_role_img"
+                    class="questionoftheday-role-img"
+                >
+                <div class="role-link-content">
+                    <h3><span class="blue-circle"></span> Question of the Day</h3>
+                    <p>The Question of the Day role is for those who selected this role. Whenever a question is asked in qotd, the members of this role is pinged. A bot asks the question, and the members of this role answer it in a specific channel.</p>
                 </div>
             </div>
             <div class="role-link-container">
@@ -150,18 +188,10 @@
             </div>
         </span>
     </main>
-    <script>
-        function toggleNavbar() {
-            const navbarLinks = document.getElementById("navbarLinks");
-            const navbarToggle = document.querySelector(".navbar-toggle");
-  
-            navbarLinks.classList.toggle("active");
-            navbarToggle.classList.toggle("open");
-  
-            // Toggle aria-expanded for accessibility
-            const expanded = navbarToggle.getAttribute("aria-expanded") === "true";
-            navbarToggle.setAttribute("aria-expanded", !expanded);
-        }
-    </script>
+    <footer>
+        <div class="footer-content"></div>
+    </footer>
+
+    <script src="static/scripts/homepage.config/homepage.config.js"></script>
 </body>
 </html>

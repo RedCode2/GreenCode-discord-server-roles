@@ -25,7 +25,7 @@
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 10px;
     margin: 0; 
 }
@@ -34,6 +34,7 @@
 .role-link-container:hover {
     transform: scale(1.05);
     box-shadow: 0px 0px 10px #000000fb;
+    opacity: 1;
 }
 
 /* Image styles for different roles */
@@ -42,7 +43,9 @@
 .role-link-container .patreon-role-img,
 .role-link-container .serverbooster-role-img,
 .role-link-container .other-roles-img,
-.role-link-container .greencoder-role-img {
+.role-link-container .greencoder-role-img, 
+.role-link-container .questionoftheday-role-img,
+.role-link-container .tofocus-role-img {
     display: block;
     margin: 0 auto;
     width: 70%;
@@ -52,6 +55,10 @@
     margin-bottom: 5%;
 }
 
+.role-link-container .professional-role-img {
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
 /* Individual image width adjustments */
 .role-link-container .memelord-role-img {
     width: 65%;
@@ -66,6 +73,15 @@
 }
 
 .role-link-container .greencoder-role-img {
+    width: 40%;
+    margin-top: 10%;
+    margin-bottom: 10%
+}
+
+.role-link-container .questionoftheday-role-img {
+    margin-top: 10%;
+}
+.role-link-container .tofocus-role-img {
     width: 50%;
     margin-top: 5%;
 }

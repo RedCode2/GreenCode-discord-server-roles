@@ -8,10 +8,10 @@
     color: #1b1b1b;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: fixed;
-    width: 90%;
+    width: 80%;
     height: 70px;
     top: 0px;
-    z-index: 1;
+    z-index: 1000;
     border: 1px solid #e5e5e5;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
