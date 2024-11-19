@@ -1,11 +1,12 @@
-function toggleNavbar() {
-    const navbarLinks = document.getElementById("navbarLinks");
-    const navbarToggle = document.querySelector(".navbar-toggle");
-
-    navbarLinks.classList.toggle("active");
-    navbarToggle.classList.toggle("open");
-
-    // Toggle aria-expanded for accessibility
-    const expanded = navbarToggle.getAttribute("aria-expanded") === "true";
-    navbarToggle.setAttribute("aria-expanded", !expanded);
-}
+document.getElementById('memelord__role').addEventListener('click', function() {
+    window.open('static/webpages/roles/memelord.html', '_blank');
+})
+document.getElementById('patreon-donor__role').addEventListener('click', function() {
+    window.open('static/webpages/roles/patreon-donor.html', '_blank');
+})
+document.getElementById('server-booster__role').addEventListener('click', function() {
+    window.open('static/webpages/roles/server-booster.html', '_blank');
+})
+document.getElementById('to-focus__role').addEventListener('click', function() {
+    window.open('static/webpages/roles/to-focus.html', '_blank');
+});

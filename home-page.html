@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="static/stylesheets/roboto-css-classes.css">
     <link rel="stylesheet" href="static/stylesheets/page-elements/pg-elements.navbar/navbar-stylesheet.css">
     <link rel="stylesheet" href="static/stylesheets/page-elements/pg-elements.role-links/role-view-links.css">
+    <link rel="stylesheet" href="static/stylesheets/page-elements/pg-elements.footer/home-page-footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -78,6 +79,7 @@
         h2 {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
+        
     </style>
 </head>
 <body>
@@ -86,8 +88,8 @@
         <ul class="navbar-links" id="navbarLinks">
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="static/webpages/about.html">About</a></li>
+            <li><a href="static/webpages/contact.html">Contact</a></li>
         </ul>
         <div class="navbar-toggle" onclick="toggleNavbar()">
             <span></span>
@@ -98,7 +100,7 @@
 
     <main class="main">        
         <span href="#" class="links-overall-container">
-            <div class="role-link-container">
+            <div class="role-link-container" id="professional__role">
                 <img
                     src="static/stylesheets/page-elements/images/home-page.html/4cbee01007ffb957e6bf876a76d8b002-computer-screen-with-code-icon.webp" 
                     alt="professional_role_img"
@@ -109,7 +111,7 @@
                     <p>The Professional role is challenging to get. We have a test to see if you deserve this role or not. Click on this link to take the test. Good luck!</p>
                 </div>
             </div>
-            <div class="role-link-container">
+            <div class="role-link-container" id="memelord__role">
                 <img
                     src="static/stylesheets/page-elements/images/home-page.html/5144-C5v38L.jpg" 
                     alt="memelord_role_img"
@@ -120,7 +122,7 @@
                     <p>If you send memes regularly in the memes channel, you will get the Meme Lord role. Post memes regularly and the mods will find out if you deserve this role.</p>
                 </div>
             </div>
-            <div class="role-link-container">
+            <div class="role-link-container" id="patreon-donor__role">
                 <img 
                     src="static/stylesheets/page-elements/images/home-page.html/avatars-000146225244-3a983t-t1080x1080.jpg" 
                     alt="patreon_role_img"
@@ -131,7 +133,7 @@
                     <p>The Patreon role is only for those who are Patreon members of GreenCode whereas the Donor role is only for those who donated to GreenCode. Click on this link to view the links to donate to GreenCode or become a Patreon member of GreenCode.</p>
                 </div>
             </div>
-            <div class="role-link-container">
+            <div class="role-link-container" id="server-booster__role">
                 <img 
                     src="static/stylesheets/page-elements/images/home-page.html/pngaaa.com-5186301.png" 
                     alt="serverbooster_role_img"
@@ -142,7 +144,7 @@
                     <p>The Server Booster role is only for those who boost the server. Boosting a discord server can improve the features in the server like 'adding more space for maximum number of custom emojis' etc.</p>
                 </div>
             </div>
-            <div class="role-link-container">
+            <div class="role-link-container" id="to-focus__role">
                 <img 
                     src="static/stylesheets/page-elements/images/home-page.html/815.webp" 
                     alt="tofocus_role_img"
@@ -153,7 +155,7 @@
                     <p>The 2 Focus role is for those who selected it. It basically provides you information and updates about the 2 Focus app. You can report bugs on the app, suggest features and many more. You can install the 2 Focus app on Play Store (android) or the App store (iOS).</p>
                 </div>
             </div>
-            <div class="role-link-container">
+            <div class="role-link-container" id="green-coder__role">
                 <img
                     src="static/stylesheets/page-elements/images/home-page.html/dna_1f9ec.png" 
                     alt="greencoder_role_img"
@@ -164,7 +166,7 @@
                     <p>The Green Coder role is the basic role for everyone! Whenever a user joins GreenCode's server, they will be given this role. Somehow, if you don't get this role, and it's been a few days since you joined the server, feel free to contact the mods.</p>
                 </div>
             </div>
-            <div class="role-link-container">
+            <div class="role-link-container" id="question-of-the-day__role">
                 <img 
                     src="static/stylesheets/page-elements/images/home-page.html/question-and-answer-7247900_1920.png" 
                     alt="questionoftheday_role_img"
@@ -175,7 +177,7 @@
                     <p>The Question of the Day role is for those who selected this role. Whenever a question is asked in qotd, the members of this role is pinged. A bot asks the question, and the members of this role answer it in a specific channel.</p>
                 </div>
             </div>
-            <div class="role-link-container">
+            <div class="role-link-container" id="other-roles__role">
                 <img 
                     src="static/stylesheets/page-elements/images/home-page.html/0f8b2870896edcde8f6149fe2733faaf.jpg" 
                     alt="other_roles_img"
@@ -188,10 +190,31 @@
             </div>
         </span>
     </main>
+    
     <footer>
-        <div class="footer-content"></div>
+        <div class="footer-content">
+            <div class="footer-web-short-info">
+                About the project
+            </div>
+            <p>
+                The project is made in an attempt to explain all the roles in GreenCode's discord server. All roles are explained in detail except Administrator roles.
+            </p>
+        </div>
+        <div class="footer-links-container">
+            <a href="static/webpages/terms-and-conditions.html" class="footer-link" target="_blank">Terms & Conditions</a>
+            <a href="static/webpages/privacy-policy.html" class="footer-link" target="_blank">Privacy Policy</a>
+        </div>
+        <div class="footer-contacts">
+            <h2>Contact me:</h2>
+            <p>Discord: red__code</p>
+            <p>GitHub: <a href="https://www.github.com/RedCode2" class="footer-link" target="_blank">RedCode2</a></p>
+        </div>
+        <div>
+            <p>© 2021 greencode-discord-server-roles. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="static/scripts/homepage.config/homepage.config.js"></script>
+    <script src="static/scripts/navbar/navbar.js"></script>
 </body>
 </html>

@@ -1,0 +1,75 @@
+:root {
+    --navbar-height: 150px;
+}
+
+body {
+    background-image: url('../../background-img/glowing-abstract-banner-with-red-blue-lights/22001.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #ffffff;
+    color: #2d2d2d;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    flex-direction: column;
+    line-height: 1.8;
+    padding-top: var(--navbar-height);
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-y: scroll; /* Allows scrolling */
+    
+    /* Hide scrollbar in all modern browsers */
+    -ms-overflow-style: none; /* For IE and Edge */
+    scrollbar-width: none;    /* For Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome, Safari, and Edge */
+}
+
+.main-container {
+    width: 90%;
+    min-height: 400px; /* Ensures the container starts at 400px but can grow */
+    background-color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 300px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 16px;
+    overflow: auto; /* Prevents overflow issues if the content exceeds the container */
+}
+
+.discord-link {
+    background-color: #7289dacc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 14px;
+    text-decoration: none;
+}
+
+.discord-link:hover {
+    background-color: #7289da;
+}
+
+/* Ensuring text inside the main-container remains fully opaque */
+.main-container h1,
+.main-container p,
+.main-container h2 {
+    opacity: 1;
+}
+
+.main-container p,
+.main-container h2 {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
