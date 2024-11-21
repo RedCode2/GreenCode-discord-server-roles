@@ -10,3 +10,12 @@ document.getElementById('server-booster__role').addEventListener('click', functi
 document.getElementById('to-focus__role').addEventListener('click', function() {
     window.open('static/webpages/roles/to-focus.html', '_blank');
 });
+document.getElementById('green-coder__role').addEventListener('click', function() {
+    window.open('static/webpages/roles/green-coder.html', '_blank');
+});
+document.getElementById('question-of-the-day__role').addEventListener('click', function() {
+    window.open('static/webpages/roles/question-of-the-day.html', '_blank');
+});
+document.getElementById('other-roles__role').addEventListener('click', function() {
+    window.open('static/webpages/roles/other-roles.html', '_blank');
+});
